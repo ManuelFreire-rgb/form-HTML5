@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="card text-center m-5">
+        <div class="card-header h3 text-start">
+            Payment Form Example
+        </div>
+        <div class="card-body">
+            <div class="row alert alert-danger text-start">
+                <span>
+                    Some fields are missing
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-md-5 text-start">
+                    <label for="validationCustom03" class="form-label">Card #</label>
+                    <input type="number" class="form-control" id="validationCustom03" placeholder="XXXXXXXXXXXXXXXX"
+                        required>
+                </div>
+                <div class="col-md-3 text-start">
+                    <label for="validationCustom04" class="form-label">CVC #</label>
+                    <input type="number" class="form-control" id="validationCustom03" placeholder="0000" required>
+                </div>
+                <div class="col-md-4 text-start">
+                    <label for="validationCustom05" class="form-label">Amount</label>
+                    <div class="d-flex">
+                        <span>$</span>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="Amount" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6 text-start p-2">
+                    <fieldset class="text-start">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </fieldset>
+                    <fieldset class="text-start">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" readonly required>
+                    </fieldset>
+                    <fieldset class="text-start">
+                        <div class="">
+                            <label for="validationCustom03" class="form-label">We accept:</label>
+                        </div>
+                        <div class="d-inline-flex bg-secondary rounded-2">
+                            <div class="mx-1 p-2">
+                                <input type="radio" for="radioInput" name="radioInput" id="" checked>
+                                <span><i class="fa-brands fa-cc-mastercard fa-lg" style="color: #0a051f;"></i></span>
+                            </div>
+                            <div class="mx-1 p-2">
+                                <input type="radio" name="radioInput" id="">
+                                <span><i class="fa-brands fa-cc-visa fa-lg" style="color: #0a051f;"></i></span>
+                            </div>
+                            <div class="mx-1 p-2">
+                                <input type="radio" name="radioInput" id="">
+                                <span><i class="fa-brands fa-cc-diners-club fa-lg" style="color: #0a051f;"></i></span>
+                            </div>
+                            <div class="mx-1 p-2">
+                                <input type="radio" name="radioInput" id="">
+                                <span><i class="fa-brands fa-cc-discover fa-lg" style="color: #0a051f;"></i></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col text-start p-2">
+                    <fieldset class="text-start">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </fieldset>
+                    <fieldset class="d-flex text-start mb-2">
+                        <div class="col px-1">
+                            <label for="validationCustom03" class="form-label">State</label>
+                            <select id="select-animal" name="animal" class="form-control">
+                                <option value="dog" label="Selecionar un Pais" selected></option>
+                                <option value="dog" label="chile"></option>
+                                <option value="cat" label="venezuela"></option>
+                                <option value="bird" label="argentina"></option>
+                                <option value="fish" label="paraguay"></option>
+                            </select>
+                        </div>
+                        <div class="col px-2">
+                            <label for="validationCustom03" class="form-label">Postal Code</label>
+                            <input type="number" class="form-control" id="validationCustom03" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="text-start mb-2">
+                        <span>Message</span>
+                        <textarea name="" id="" class="w-100 lh-lg" ></textarea>
+                        <p class="link-seco">Add any notes here.</p>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-end">
+            <input class="btn btn-secondary" type="button" value="Cancel">
+            <input class="btn btn-primary" type="button" value="Send">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.min.js"
+        integrity="sha384-Re460s1NeyAhufAM5JwfIGWosokaQ7CH15ti6W5Y4wC/m4eJ5opJ2ivohxVM05Wd"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
