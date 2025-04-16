@@ -40,5 +40,15 @@ document.getElementById("paymentForm").addEventListener("submit", function (e) {
       });
     } else {
       alert("✅ Form is valid and ready to be submitted!");
+        const form = document.getElementById("paymentForm");
+          form.reset();
+        
+          fields.forEach(field => {
+        const input = document.getElementById(field.id);
+        input.classList.remove("bg-danger-subtle");
+      });
+        
+      errorBox.classList.add("d-none");
+      errorList.innerHTML = "";
     }
   });
